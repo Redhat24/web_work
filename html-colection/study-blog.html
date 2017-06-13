@@ -8,65 +8,89 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
 <link rel="shortcut icon" href="../images/zjh.ico"/>
 <link href="../css.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
-.glyphicon{ display: block; width:20px; height:20px; position:fixed; right:20px; bottom: 30px; }
-</style>
 </head>
 
 <body>
 <div id="back-to-top" class="back-to-top-water"></div>
-<header>
+<div class="wrap-12">
+<header class="log-intro">
 <p>近日，有感于求职受挫，郁郁。又觉自身学术不精，信心不足，终日昏沉。今日，决定潜心钻研书本，并将所学所得记录成册，以激励自己。</p>
-<p class="small">Redhat于2017/4/12</p>
 <p class="small">一点说明：使用Bootstrap框架编写</p>
+<p class="small pull-right">———— Redhat于2017/4/12</p>
 </header>
-<!--<span class="glyphicon glyphicon-chevron-up"></span>-->
+<div id="bread-guid"><img src="../images/position-guid.png" width="30" style="vertical-align:bottom;"/>所在的位置：<img src="../images/home-icon.png" width="16"/><a href="../index.html">首页</a> &gt; <img src="../images/log-icon.png" width="16"/>学习日志</div>
 <!--日期索引-->
 日期索引：
 <div class="btn-group">
     <div class="btn-group">
       <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">4月
       	<span class="caret"></span></button>
-      <ul class="dropdown-menu">
-          <li><a href="#4-12">12日</a></li>
-          <li><a href="#4-13">13日</a></li>
-          <li><a href="#4-14">14日</a></li>
-      </ul>
-  </div>
-  <div class="btn-group">
-      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">5月
-      	<span class="caret"></span></button>
-      <ul class="dropdown-menu">
-          <li><a href="#5-21">21日</a></li>
-          <li class="divider"></li>
-          <li><a href="#5-3">22日</a></li>
-          <li><a href="#5-3">23日</a></li>
-          <li><a href="#5-3">24日</a></li>
-          <li><a href="#5-3">25日</a></li>
-          <li><a href="#5-3">26日</a></li>
-          <li><a href="#5-3">27日</a></li>
-          <li><a href="#5-3">28日</a></li>
-          <li class="divider"></li>
-          <li><a href="#5-3">29日</a></li>
-          <li><a href="#5-3">30日</a></li>
-          <li><a href="#5-3">31日</a></li>
-      </ul>
-  </div>
+        <table class="dropdown-menu">
+        	<tr><th>日</th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th></tr>
+        	<tr><td></td><td></td><td></td><td><a href="#4-12">12</a></td><td><a href="#4-13">13</a></td><td><a href="#4-14">14</a></td><td></td></tr>
+        </table>
+  	</div>
+	<div class="btn-group">
+		<button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">5月<span class="caret"></span></button>
+		<table class="dropdown-menu">
+        	<tr><th>日</th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th></tr>
+        	<!--<tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>-->
+        	<tr><td></td><td></td><td><a href="#5-9">9</a></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td><a href="#5-19">19</a></td><td></td></tr>
+            <tr><td><a href="#5-21">21</a></td><td><a href="#5-22">22</a></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </table>
+	</div>
 </div>
 <hr/>
 <!--日志内容-->
-<div id="4-12">
-<h4>4月12日 <small>Wednesday</small></h4>
-<p><strong>摘要</strong>：JS简介、JSON语法</p>
-<p>JS诞生于1995年，最初的主要目的是处理一些输入验证操作。如今JS已经能够处理复杂的计算和交互，拥有了闭包、匿名函数、甚至元编程等特性。</p>
-<p class="text-primary">问题：几个名词不太理解：闭包、匿名函数、元编程</p>
-<p>一个完整的Javascript应由三部分组成：核心ECMAScript、文档对象模型DOM、浏览器对象模型BOM</p>
-<p class="text-muted">注释：ECMAScript发音"ek-ma-script"</p>
-<p>补充记录4.11学习的Json内容：</p>
-<p>Json即Javascript对象表示法，利用JS中的一些模式来表示结构化数据。是一种数据格式，而不是编程语言。可以表示三种类型的值：简单值、对象、数组。</p>
-<p>简单值：使用与JS中相同的语法，可以表示字符串、数值、布尔值和null，不支持js中的特殊值undefined。表示字符串时必须使用双引号。</p>
-<p>对象：与js的差别有：不声明变量，没有大括号末尾的分号，对象的属性必须加双引号。可以在对象中嵌入对象。同一个对象中绝对不应该出现两个同名属性。</p>
-<p>数组：采用数组字面量形式。同样没有分号和变量。可以把数组和对象结合起来构成更复杂的数据集合。</p>
+<div id="5-22">
+<h4>5月22日 <small>Monday</small></h4>
+<p><strong>摘要</strong>：</p>
+<p>Dom操作，添加html结构。先用 $(‘html结构’) 创建节点，然后使用append或appenTo方法插入节点。</p>
+<p>使用方法：被插入元素节点.append(插入节点)，插入节点.appendTo(被插入元素节点)</p>
+<p>.append()和.appendTo()两种方法功能相同，主要的不同是语法内容和目标的位置不同</p>
+</div>
+<hr>
+<div id="5-21">
+<h4>5月21日 <small>Sunday</small></h4>
+<p><strong>摘要</strong>：一段时间的总结</p>
+<p>一转眼，从4月16日上班起，已是一个多月过去了。</p>
+<p>而我呢，也并没有如自己以为的，会在上班之余充电，写学习日志。每天下班后就完全不想面对电脑了。一耽搁就是许久。</p>
+<p>虽然是公司里唯一的技术人员，一切都是自己摸索，然而这一个月我也非常明显的察觉到自己的进步，有一个目标，有一堆任务，有人提出要求，真的不是自己瞎捣鼓能相比的。总结来说，对html和css的布局应用有了非常大的提高，一些自己没想到的或是想过但总是不得其解的也得到解答，除此之外，因为是唯一的技术，一切都是我来搞，对PS的运用也愈发得心应手了，一些后台的东西也摸到冰山一角。</p>
+<p>今天打开电脑记录是在等待下载安装github的过程中进行的，想把这个文件上传，然后持续恢复更新和记录。maybe有一天会成为我的第一批博客文件。</p>
+</div>
+<hr>
+<div id="5-19">
+<h4>5月19日 <small>Friday</small></h4>
+<p><strong>摘要</strong>：图片加载速度</p>
+<p>在网上看到一个解决图片加载速度慢的方法，把图片切割成几个块分别显示会提高加载速度，然后终于明白为什么有些网站的banner是一块块的，最初以为是为了保密。</p>
+<p>但问题在于我切割显示的课程banner加载依旧慢，看来带宽影响更大吧。</p>
+</div>
+<hr>
+<div id="5-9">
+<h4>5月9日 <small>Tuesday</small></h4>
+<p><strong>摘要</strong>：追加记录 图片使用背景图插入</p>
+<p>之前不明白可以插入的图片为何要用背景图片的形式，直到刚才上传时漏掉一张图片，原本靠图片撑开的容器缩小，内容一下乱套了。
+如果是背景图，顶多是片空白，不会乱套；</p>
+<p>而且，过程中几次遇到导航栏图片乱动的问题，因为有的页面设置了vertical-align的原因，使用背景图实现的几个图标则没有这种问题。</p>
+<p class="text-primary">5.22补充一点，还有使用背景图可以简化html结构。</p>
+</div>
+<hr>
+<div id="4-14">
+<h4>4月14日 <small>Friday</small></h4>
+<p><strong>摘要</strong>：使用document.write方法+ifame标签制作登陆图标的解读</p>
+<p>使用ifame框架制作登陆图标效果如图，<img src="img/loginin.jpg" >代码如下：</p>
+<pre>
+&lt;script type="text/javascript"&gt;
+    document.write('&lt;iframe src="http://www.51niutu.com/index.php?m=member&c=index&a=mini&forward='+encodeURIComponent(location.href)+'&siteid=1" allowTransparency="true"  
+    width="300" height="24" frameborder="0" scrolling="no"&gt;&lt;/iframe&gt;')
+&lt;/script&gt;
+</pre>
+<p>IE5.5开始支持浮动框架的内容透明。如果想要为浮动框架定义透明内容，则必须满足下列条件。
+1.与 iframe 元素一起使用的 allowTransparency 标签属性必须设置为 true。
+2.在 iframe 内容源文档，background-color 或 body 元素的 bgColor 标签属性必须设置为 transparent。</p>
+<p>allowTransparency设置或获取对象是否可为透明；frameborder规定是否显示框架周围的边框，默认1有边框，0关闭边框；scrolling规定是否在 iframe 中显示滚动条，默认auto有需要时显示，yes始终显示即使不需要，no从不显示即使需要；
+</p>
 </div>
 <hr/>
 <div id="4-13">
@@ -85,7 +109,7 @@
 .FocusPic .change i.cur {background-color:#3dc7bf !important; width:15px; height:15px}
 </pre>
 <p>HTML代码如下：</p>
-<pre>
+<pre class="preclick">
 &lt;div class=&quot;FocusPic&quot;&gt;
     &lt;div class=&quot;content&quot; id=&quot;main-slide&quot;&gt;
         &lt;div class=&quot;changeDiv&quot;&gt;
@@ -107,34 +131,56 @@
 <p>“#main-slide”代表包裹焦点图的内容。“cur”是按钮切换增加的样式。751,252,分别是焦点图的宽和高。</p>
 </div>
 <hr>
-<div id="4-14">
-<h4>4月14日 <small>Friday</small></h4>
-<p><strong>摘要</strong>：使用document.write方法+ifame标签制作登陆图标的解读</p>
-<p>使用ifame框架制作登陆图标效果如图，<img src="img/loginin.jpg" >代码如下：</p>
-<pre>
-&lt;script type="text/javascript"&gt;
-    document.write('&lt;iframe src="http://www.51niutu.com/index.php?m=member&c=index&a=mini&forward='+encodeURIComponent(location.href)+'&siteid=1" allowTransparency="true"  
-    width="300" height="24" frameborder="0" scrolling="no"&gt;&lt;/iframe&gt;')
-&lt;/script&gt;
-</pre>
-<p>IE5.5开始支持浮动框架的内容透明。如果想要为浮动框架定义透明内容，则必须满足下列条件。
-1.与 iframe 元素一起使用的 allowTransparency 标签属性必须设置为 true。
-2.在 iframe 内容源文档，background-color 或 body 元素的 bgColor 标签属性必须设置为 transparent。</p>
-<p>allowTransparency设置或获取对象是否可为透明；frameborder规定是否显示框架周围的边框，默认1有边框，0关闭边框；scrolling规定是否在 iframe 中显示滚动条，默认auto有需要时显示，yes始终显示即使不需要，no从不显示即使需要；
-</p>
+<div id="4-12">
+<h4>4月12日 <small>Wednesday</small></h4>
+<p><strong>摘要</strong>：JS简介、JSON语法</p>
+<p>JS诞生于1995年，最初的主要目的是处理一些输入验证操作。如今JS已经能够处理复杂的计算和交互，拥有了闭包、匿名函数、甚至元编程等特性。</p>
+<p class="text-primary">问题：几个名词不太理解：闭包、匿名函数、元编程</p>
+<p>一个完整的Javascript应由三部分组成：核心ECMAScript、文档对象模型DOM、浏览器对象模型BOM</p>
+<p class="text-muted">注释：ECMAScript发音"ek-ma-script"</p>
+<p>补充记录4.11学习的Json内容：</p>
+<p>Json即Javascript对象表示法，利用JS中的一些模式来表示结构化数据。是一种数据格式，而不是编程语言。可以表示三种类型的值：简单值、对象、数组。</p>
+<p>简单值：使用与JS中相同的语法，可以表示字符串、数值、布尔值和null，不支持js中的特殊值undefined。表示字符串时必须使用双引号。</p>
+<p>对象：与js的差别有：不声明变量，没有大括号末尾的分号，对象的属性必须加双引号。可以在对象中嵌入对象。同一个对象中绝对不应该出现两个同名属性。</p>
+<p>数组：采用数组字面量形式。同样没有分号和变量。可以把数组和对象结合起来构成更复杂的数据集合。</p>
 </div>
-<hr>
-<div id="5-21">
-<h4>5月21日 <small>Sunday</small></h4>
-<p><strong>摘要</strong>：一段时间的总结</p>
-<p>一转眼，从4月16日上班起，已是一个多月过去了。</p>
-<p>而我呢，也并没有如自己以为的，会在上班之余充电，写学习日志。每天下班后就完全不想面对电脑了。一耽搁就是许久。</p>
-<p>虽然是公司里唯一的技术人员，一切都是自己摸索，然而这一个月我也非常明显的察觉到自己的进步，有一个目标，有一堆任务，有人提出要求，真的不是自己瞎捣鼓能相比的。总结来说，对html和css的布局应用有了非常大的提高，一些自己没想到的或是想过但总是不得其解的也得到解答，除此之外，因为是唯一的技术，一切都是我来搞，对PS的运用也愈发得心应手了，一些后台的东西也摸到冰山一角。</p>
-<p>今天打开电脑记录是在等待下载安装github的过程中进行的，想把这个文件上传，然后持续恢复更新和记录。maybe有一天会成为我的第一批博客文件。</p>
 </div>
-
 <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="../js.js"></script>
+<style>
+.imgview-mask {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 999998;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: .75;
+    filter: alpha(opacity=75);
+    display: none;
+}
+.imgview{display:none;position: fixed;left: 50%;
+    top: 50%;
+    margin: -50px 0 0 -100px;
+    background: #fff;
+    z-index: 999999;}
+.imgview span{	position: absolute;
+    width: 40px;
+    height: 40px;
+    right: -40px;
+    top: -40px;}
+</style>
+<div class="imgview-mask"></div>
+<div class="imgview">
+	<img src="../images/resume.jpg">
+    <span>X</span>
+</div>
+<script type="text/javascript">
+	$('.preclick').click(function(){
+			
+	});
+</script>
 </body>
 </html>
